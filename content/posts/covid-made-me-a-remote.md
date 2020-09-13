@@ -68,7 +68,7 @@ These things helped make remote working work.
   young children. School and childcare - help here.
 - I’ve tasted remote working. It’s brilliant. But I worry I won’t be happy
   returning to an office full time. I can’t forget what remote work is like. It
-  is superior. For me, at least. But I’d - get back into the swing of it,
+  is superior. For me, at least. But I’d get back into the swing of it,
   regardless.
 - Lack of good tools at home once my hardware gets recalled back to the office.
   But I have a plan for this - I have two towers I can upgrade.
@@ -209,8 +209,8 @@ But freedom to banter and catch up is important too. Have a jolly with your
 team. It eliminates the lonely remote feeling. It adds the social touch that I
 was worried I would miss going from working in the office.
 
-We use Zoom for this, despite the privacy concerns. There are alternatives.
-Slack and Discord are two options.
+We used Zoom for this for a while. In the end, we upgraded our Slack
+subscription and used that for group calls.
 
 #### Unexpected Bonus
 
@@ -221,8 +221,7 @@ your fingertips.
 #### Recommended Resources
 
 - [SCRUM by Jeff Sutherland](https://www.amazon.co.uk/Scrum-Doing-Twice-Work-Half/dp/1847941109)
-- Zoom
-- Slack
+- [Slack](https://slack.com/)
 
 ### Screen Share troubleshooting
 
