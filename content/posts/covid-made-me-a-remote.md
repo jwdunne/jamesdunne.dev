@@ -1,7 +1,6 @@
 ---
 title: "COVID Made Me a Remote"
 date: 2020-09-13T14:48:49+01:00
-draft: true
 ---
 
 I am now a remote worker. Out of necessity. And after years of scepticism…
