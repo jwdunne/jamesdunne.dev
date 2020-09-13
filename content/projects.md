@@ -6,6 +6,7 @@ type: "page"
 
 I have a few on-going projects:
 
-- This site.
-- Enguard, a feedback framework
-- Fun, a functional PHP utility belt
+- **[This site](https://github.com/jwdunne/jamesdunne.dev).** Feel free to file
+  issues with errors on this site, including what's written
+- **[Enguard](https://github.com/jwdunne/enguard)**, a feedback framework.
+- **[Fun](https://github.com/jwdunne/fun)**, a functional PHP utility belt
