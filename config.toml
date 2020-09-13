@@ -1,0 +1,47 @@
+baseURL = "https://jamesdunne.dev/"
+languageCode = "en-gb"
+title = "James Dunne"
+theme = "ink"
+
+pygmentsstyle = "vs"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+[params]
+	subtitle = "Thoughts on software development"
+	mode = "auto"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 2
+
+[[menu.main]]
+name = "Projects"
+url = "/projects"
+weight = 3
+
+[[menu.main]]
+name = "Writing"
+url = "/writing"
+weight = 4
+
+[[menu.main]]
+name = "Contact"
+url = "/contact"
+weight = 5
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/jwdunne"
+
+[[params.social]]
+name = "Email"
+icon = "mail"
+url = "mailto:me@jamesdunne.dev"
