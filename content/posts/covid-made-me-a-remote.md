@@ -24,7 +24,7 @@ can't see these costs. They're normal.
 - **And commuting saps energy.** I have far more energy to spend on
   side-projects, family and solving problems.
 - **I eat better.** I can now cook from scratch on my lunch. The kitchen is only
-  10 feet away. It’s hard to resist greasy cafe food when you forget your lunch
+  10 feet away. It’s hard to resist greasy café food when you forget your lunch
   and you can pay by card.
 - **And team unity increased.** Showing up daily unifies the team. That’s what
   provides structure. A routine and a shared mission.
@@ -71,7 +71,7 @@ These things helped make remote working work.
   is superior. For me, at least. But I’d get back into the swing of it,
   regardless.
 - Lack of good tools at home once my hardware gets recalled back to the office.
-  But I have a plan for this - I have two towers I can upgrade.
+  I do have a plan for this though - I have two towers I can upgrade.
 
 ## Context
 
@@ -114,7 +114,7 @@ with the dog.
 ### Health
 
 I eat far healthier. I can now cook food from scratch for lunch while working
-from home. Instead of just grabbing a burger from the cafe, I can cook something
+from home. Instead of just grabbing a burger from the café, I can cook something
 with higher nutritional value.
 
 Less time sitting in a car in rush hour makes a difference too. In fact, I’m
@@ -145,11 +145,11 @@ room or a rented space.
 
 ### Expecting it to work like the office
 
-At first, I tried working the usual 9:30 am to 5:30 pm minimum. But this isn’t
+At first, I tried working the usual 9:30 p.m. to 5:30 p.m. minimum. But this isn’t
 practical in a separate setting. You might need to take a little longer here.
 And you’re free to work longer elsewhere.
 
-I had to establish my own routine. I've settled around 10 am to 6 pm - 6:30 pm.
+I had to establish my own routine. I've settled around 10 a.m. to 6 p.m. - 6:30 p.m.
 
 ### The importance of a good chair
 
@@ -166,11 +166,11 @@ Someone suggested an air duster. So I’m stocking up on those.
 ### Neglecting loved ones
 
 With my newfound energy, I got carried away. I’d get stuck into a side project
-and, before I knew it, it was 1 am. My partner wasn’t pleased.
+and, before I knew it, it was 1 a.m. My partner wasn’t pleased.
 
-But in general, I’ve felt guilty for using more of the time to work on my craft.
-And sometimes at the expense of my loved ones. But really, I’m working harder
-than usual - I want to come out of this crisis stronger.
+I’ve felt guilty for using more of the time to work on my craft - sometimes at
+the expense of my loved ones. But really, I’m working harder than usual - I want
+to come out of this crisis stronger.
 
 ### Video games
 
@@ -205,7 +205,7 @@ Make a point of unblocking team members. If you can rescue them from a day of
 headache and they learn something, you’re being productive. This works really
 well combined with a culture of learning.
 
-But freedom to banter and catch up is important too. Have a jolly with your
+Freedom to banter and catch up is important too. Have a jolly with your
 team. It eliminates the lonely remote feeling. It adds the social touch that I
 was worried I would miss going from working in the office.
 
@@ -220,7 +220,8 @@ your fingertips.
 
 #### Recommended Resources
 
-- [SCRUM by Jeff Sutherland](https://www.amazon.co.uk/Scrum-Doing-Twice-Work-Half/dp/1847941109)
+- [SCRUM by Jeff
+  Sutherland](https://www.amazon.co.uk/Scrum-Doing-Twice-Work-Half/dp/1847941109)
 - [Slack](https://slack.com/)
 
 ### Screen Share troubleshooting
@@ -280,7 +281,8 @@ GitLab, GitHub Actions or Travis could work just as well.
 
 #### Recommended Resources
 
-- [Continuous Integration by Paul Duvall, Steve Matyas & Andrew Glover](https://www.amazon.co.uk/Continuous-Integration-Improving-Software-Signature/dp/0321336380)
+- [Continuous Integration by Paul Duvall, Steve Matyas & Andrew
+  Glover](https://www.amazon.co.uk/Continuous-Integration-Improving-Software-Signature/dp/0321336380)
 - [CircleCI](https://circleci.com/)
 - [GitHub Actions](https://github.com/features/actions)
 - [Docker CLI Makefile](https://github.com/docker/cli/blob/master/Makefile)
@@ -288,7 +290,7 @@ GitLab, GitHub Actions or Travis could work just as well.
 ### Shared growth-mindset
 
 A growth mindset has become a bit of a buzzword. But I read the book not long
-after it came out - it had an outsized impact on my thinking about personal
+after it came out and it had a massive impact on my thinking about personal
 growth. Implementing a team-wide growth mindset has had a radical impact on our
 work. Especially in code review.
 
@@ -298,15 +300,18 @@ Readily accept them as a way to get better, rather than failing at being good.
 Avoid viewing criticism as hurtful to the ego. In fact, if you want to do your
 best work, learning from constructive feedback is essential.
 
-But be respectful. Calling names, e.g “you’re an idiot”, is harmful. Any
+Do be respectful though. Calling names, e.g “you’re an idiot”, is harmful. Any
 question of ability should be left to private performance review and out of the
 code review process.
 
 #### Recommended Resources
 
-- [Mindset by Carol Dweck](https://www.amazon.co.uk/Mindset-How-Fulfil-Your-Potential/dp/1780332009)
-- [Peer Reviews at Palantir](https://medium.com/palantir/code-review-best-practices-19e02780015f)
-- [Continuous Improvement](https://en.wikipedia.org/wiki/Continual_improvement_process)
+- [Mindset by Carol
+  Dweck](https://www.amazon.co.uk/Mindset-How-Fulfil-Your-Potential/dp/1780332009)
+- [Peer Reviews at
+  Palantir](https://medium.com/palantir/code-review-best-practices-19e02780015f)
+- [Continuous
+  Improvement](https://en.wikipedia.org/wiki/Continual_improvement_process)
 
 ### Culture of Learning
 
@@ -328,10 +333,14 @@ Regular retrospectives and post-mortems are an awesome space for these ideas.
 
 #### Recommended Resources
 
-- [Mindset by Carol Dweck](https://www.amazon.co.uk/Mindset-How-Fulfil-Your-Potential/dp/1780332009)
-- [The Phoenix Project by Gene Kim, Kevin Behr & George Spafford](https://www.amazon.co.uk/Phoenix-Project-Devops-Helping-Business/dp/1942788290)
-- [The 7 Habits of Highly Effective People by Stephen Covey](https://www.amazon.co.uk/Habits-Highly-Effective-People-Powerful/dp/0743269519)
-- [The Goal by Eliyahu M. Goldratt](https://www.amazon.co.uk/Goal-Process-Ongoing-Improvement/dp/0566086654)
+- [Mindset by Carol
+  Dweck](https://www.amazon.co.uk/Mindset-How-Fulfil-Your-Potential/dp/1780332009)
+- [The Phoenix Project by Gene Kim, Kevin Behr & George
+  Spafford](https://www.amazon.co.uk/Phoenix-Project-Devops-Helping-Business/dp/1942788290)
+- [The 7 Habits of Highly Effective People by Stephen
+  Covey](https://www.amazon.co.uk/Habits-Highly-Effective-People-Powerful/dp/0743269519)
+- [The Goal by Eliyahu M.
+  Goldratt](https://www.amazon.co.uk/Goal-Process-Ongoing-Improvement/dp/0566086654)
 
 ### One-step project setup
 
@@ -344,11 +353,10 @@ happier we are.
 Docker has been instrumental. Scrapping the project and starting it up again
 from scratch in seconds to minutes is a powerful tool. This has boosted our
 ability to collaborate and review each other’s work. I totally recommend adding
-`export DOCKER_BUILDKIT=1` to your terminal config. _How does this work in
-practice? How does it boost collaboration and review_
+`export DOCKER_BUILDKIT=1` to your terminal config.
 
-But, in general, building a habit of automation means that we continuously
-improve our output, by quality and timeframes.
+In general, building a habit of automation means that we continuously improve
+our output, by quality and timeframes.
 
 Even if it’s just a bash script, or a Makefile. It can make a world of
 difference.
@@ -356,12 +364,17 @@ difference.
 #### Recommended Resources
 
 - [The GNU Make manual](https://www.gnu.org/software/make/manual/make.html)
-- [Writing Robust Bash Scripts](https://www.davidpashley.com/articles/writing-robust-shell-scripts/)
+- [Writing Robust Bash
+  Scripts](https://www.davidpashley.com/articles/writing-robust-shell-scripts/)
 - [Click on PyPI](https://click.palletsprojects.com/en/7.x/)
-- [GNU Make by John Graham-Cumming](https://www.amazon.co.uk/GNU-Make-Book-John-Graham-Cumming-ebook/dp/B00W4E0I1G)
-- [Continuous Integration by Paul Duvall, Steve Matyas & Andrew Glover](https://www.amazon.co.uk/Continuous-Integration-Improving-Software-Signature/dp/0321336380)
-- [Continuous Delivery by Jez Humble & David Farley](https://www.amazon.co.uk/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912)
-- [The Phoenix Project by Gene Kim, Kevin Behr & George Spafford](https://www.amazon.co.uk/Phoenix-Project-Devops-Helping-Business/dp/1942788290)
+- [GNU Make by John
+  Graham-Cumming](https://www.amazon.co.uk/GNU-Make-Book-John-Graham-Cumming-ebook/dp/B00W4E0I1G)
+- [Continuous Integration by Paul Duvall, Steve Matyas & Andrew
+  Glover](https://www.amazon.co.uk/Continuous-Integration-Improving-Software-Signature/dp/0321336380)
+- [Continuous Delivery by Jez Humble & David
+  Farley](https://www.amazon.co.uk/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912)
+- [The Phoenix Project by Gene Kim, Kevin Behr & George
+  Spafford](https://www.amazon.co.uk/Phoenix-Project-Devops-Helping-Business/dp/1942788290)
 
 ## Future Challenges
 
@@ -376,7 +389,7 @@ way.
 
 **Update:** I now look after my daughter full time. This has come with
 challenges: I now handle school runs, bed-times and distractions during the day.
-Thankfully, my boss is supportive :)
+My boss is supportive.
 
 ### Wanting to stay remote
 
@@ -384,8 +397,7 @@ For ten years, me and the boss agreed that office work was superior to remote
 work for us. For me, that has been flipped on its head.
 
 Luckily The Fresh now sees remote work as a viable option due to our lockdown
-experience. We’re all, thankfully, open to new information. It’s part of our
-culture.
+experience. But we are all open to new information - it’s part of our culture.
 
 I foresee a compromise between office and remote work. Others might not be so
 lucky. But I’m noticing that there’s more openness than a lack of.
@@ -397,9 +409,9 @@ work. Besides, it’d be impractical if on a part office/remote schedule.
 
 I will be left with inferior tools.
 
-But all is not lost. I could buy my own tools with the savings from remote
-working. And my partner's dad sent me an extra screen. Plus I have my own
-hardware. I could upgrade it.
+All is not lost. I could buy my own tools with the savings from remote working.
+And my partner's dad sent me an extra screen. Plus I have my own hardware. I
+could upgrade it.
 
 ## Summing up
 
