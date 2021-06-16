@@ -424,27 +424,64 @@ class Policy:
     name: str
 ```
 
-#### Using monoids
+#### Designing with monoids
 
 Starting with roles, we can implement the `can` method using `or`, with `False` as the identity element, over the set of policies:
 
 ```python
-
+class Role:
+    def can(self, policy: Policy) -> bool:
+        pass
 ```
 
-We can implement users in a similar way:
+We can implement the test on users in a similar way:
 
 ```python
-
+class User:
+    roles: Set[Role]
+    
+    def can(self, policy: Policy) -> bool:
+        pass
 ```
 
-- Where do monoids fit in? 
-  - The union operator forms a monoid over the set type 
-  - The or operator forms a monoid over the boolean type
-  - Use cases can be resolved via composition of these monoids 
-  - In addition, for persistence, RDBMSs are based on set theory. Persisting these values are a natural transformation between set theory and SQL
-  - In fact, much of the work could be done using relational database logic
-  - Here's how, using Laravel's query builder.
+What if we wanted to list a users set of policies? 
+
+We can use another monoid - union over sets: 
+
+```python 
+class User:
+    @property
+    def policies(self): -> Set[Policy]
+        pass
+```
+
+We considered this as an initial solution but it wasn't necessary to implement the test operation.
+
+But in any case, we have designed a composable access control API using monoids.
+
+Because of this, the implementation is simple, easy to understand and it's easy to test.
+
+And, since we used simple data structures, our data is easy to persist.
+
+#### Persisting access control rules 
+
+Set theory forms the basis of relational databases. Since a number of set operations form a monoid, we can physically model our rules of composition.
+
+Let's define some base tables:
+
+```sql
+CREATE TABLE user (
+  name char
+);
+
+CREATE TABLE role (
+  name char 
+);
+
+CREATE TABLE policy (
+  name char
+);
+```
 
 ### The composite pattern 
 
