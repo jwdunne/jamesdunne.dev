@@ -1,32 +1,43 @@
 ---
-title: "Monoids: A design pattern for composition"
+title: "A design pattern for composition"
 draft: true
 ---
 
-The Monoids is a dead simple concept with a scary sounding name.
+Composition is the beating heart of software design.
+
+From the beginning of our careers, we learn the key to good software design is thoughtful decomposition of problems, composing the solutions into a single, well-designed system.
+
+And that's where monoids come in.
+
+A monoid is a dead simple concept with a scary sounding name.
 
 We use it everyday, without thinking.
 
 And by using it consciously, it becomes a design pattern for composable units of code at multiple layers of abstraction.
 
+
 ## What is a monoid?
 
-In a nutshell, a Monoid is a protocol of interface of interfaces.
+In a nutshell, a monoid is a protocol. For a thing to be a monoid, it must have:
 
-For an interface to be a monoid, it must define two things:
+- An associative operation, function or method that returns the same type as its inputs.
+- An implementation or value that is 'null' or 'zero' in terms of the above, called the "identity element".
 
-- An associative method, closed over the interface
-- An implementation or value that is 'null' in terms of the above.
+### Associativity
 
-By implementing these rules, you can chain the method together, as if it's an infix operator - building up a composition of implementations starting with a null implementation.
+Associativity is a rule or a law about certain two-argument functions. For a two-arg function to be associative, we can rearrange the parentheses without changing the result. For example:
 
-And composition of implementations is our job description.
+```js
+(1 + 1) + 1 === 1 + (1 + 1)
+```
 
-## Trivial examples
+### The identity element
 
-Everyday programming is littered with Monoids.
+An identity element is any value that is a no-operation when used with a function. For example, zero is the identity element when considering addition over integers. Or one for multiplication. Or the empty string for string concatentation.
 
-You're using the monoid pattern when you:
+## Simple examples
+
+Monoids pervade every day programming. You're already using monoids when you:
 
 - Add or multiply
 - Concatenate strings
@@ -34,15 +45,20 @@ You're using the monoid pattern when you:
 - Merge hash tables
 - Take the union of two sets
 
-Monoids appear again and again.
-
 ### Adding and multiplying integers
 
 The `+` and `*` operators form a monoid over integers.
 
-For `+`, zero is the null value. For `*`, it's one.
+For `+`, `0` is the null value. For `*`, it's `1`.
 
-A similar pattern forms:
+Addition and multiplication are associative:
+
+```ts
+1 + 2 + 3 === 1 + (2 + 3)
+1 * 2 * 3 === 1 * (2 * 3)
+```
+
+A pattern forms when we juxtapose operations on the identity element, showing how it behaves like a noop:
 
 ```ts
 10 * 1 == 10
@@ -51,15 +67,20 @@ A similar pattern forms:
 0 + 10 == 10
 ```
 
-We know from early lessons on arithmetic that we can string together, and simplify, addition and multiplication expressions.
+We know from early lessons on arithmetic that we can chain together, and simplify, addition and multiplication expressions:
 
-Using monoids, we can bring that comparability to any software we build and need to extend.
+```js
+0 + 1 + 1 === 1 + 2 === 3
+1 * 2 * 3 === 1 * 6 === 6
+```
+
+This is perhaps the simplest example of a monoid.
 
 ### Concatenating strings
 
-A function, method or operator that concatenates strings forms a monoid.
+String concatenation forms a monoid too.
 
-It's both associative and closed over the string type:
+Concatenation is both associative and closed over the string type:
 
 ```ts
 ("a" + "b") + "c" === "abc"
@@ -73,7 +94,7 @@ Our null value is the empty string: `""`:
 "" + "a" === "a"
 ```
 
-This guarantees we can decompose strings into smaller strings. And compose them together to form larger strings.
+This guarantees we can decompose strings into smaller strings. And compose them together to form larger strings. 
 
 ### Boolean OR/AND
 
@@ -87,7 +108,7 @@ a and (b and c) == (a and b) and c
 a or (b or c) == (a or b) or c
 ```
 
-And both have a null value:
+And both have an identity element:
 
 ```python
 assert (a or False) == (False or a)
@@ -95,9 +116,7 @@ assert (a or False) == (False or a)
 assert (a and True) == (True and a)
 ```
 
-Booleans form monoids too. The symmetry with addition and multiplication is profound (and there's a very good reason for that).
-
-Fun exercise: if string concatenation is analogous to addition or Boolean or, is there a string operator analogous to multiplication and Boolean or?
+Booleans form monoids too. The symmetry with addition and multiplication is striking.
 
 ### Merging hash tables
 
@@ -119,6 +138,15 @@ An empty hash table becomes our identity element:
 {a: 1}.merge({}) == {a: 1}
 ```
 
+But another identity element exists too:
+
+```ruby
+{a: 1}.merge({a: 1}) == {a: 1}
+```
+
+Merging a hash table with itself always produces the same hash table. This too can be considered an identity element.
+
+
 ### Set Union / Intersection
 
 The set union operator forms a monoid over sets, with the empty set as an element.
@@ -135,7 +163,7 @@ assert a | (b | c) == (a | b) | c
 assert a | set() == set() | a
 ```
 
-Intersection is an interesting case. The identity element is the universal set. We can use union to create a universal set out of the sets we're using.
+Intersection is an interesting case. The identity element is the "universal set". We can use `union` to create a pretend "universal set" out of the sets we're using.
 
 ```python
 a = {1, 2}
@@ -146,13 +174,7 @@ u = a | b | c
 assert a & (b & c) == (a & b) & c
 ```
 
-Mmm, that symmetry again.
-
-Once you see the pattern, you will begin to see them everywhere.
-
-Fun fact: I see them so often, it's become a meme to my colleagues
-
-[insert monoid meme]
+There's that symmetry again.
 
 ## Real-world examples
 
@@ -160,13 +182,11 @@ So how do we use monoids to design composable software?
 
 Let's examine real-world problems that come up when building commercial systems.
 
-Each example uses a language where the type system cannot represent a useful general monoid type.
+Each example uses a language where the type system cannot represent a useful, general monoid type.
 
-Instead, we can do the opposite of Peter Norvig's excellent presentation on design patterns being a symptom of missing language features.
+Instead, we can take [Peter Norvig's excellent presentation](https://norvig.com/design-patterns/) and do the reverse: use design patterns to fill in for missing language features.
 
-[insert link to presentation]
-
-In doing so, we can develop a set of reusable design patterns that harness the power of monoids in a way the type system does support.
+In doing so, we end up with composable designs expressed in terms that the language and its type system can support.
 
 We examine each of these real-world examples:
 
@@ -175,19 +195,17 @@ We examine each of these real-world examples:
 7. The composite pattern
 8. The decorator pattern
 
-### The Pure Command Value Pattern
+### The Command Pattern
 
-Over the past few months, me and a colleague have been iterating on a SaaS product.
+Over the past few months, me and a colleague have been iterating on a SaaS product, working from a legacy codebase.
 
-Through refactoring, a natural CQRS architecture began to emerge.
-
-[insert CQRS diagram]
+Through careful iteration and refactoring, a CQRS architecture began to emerge naturally.
 
 Our initial iteration of command objects bundled the computation up with the command as a value.
 
 ```ts
-class CreateContact {
-  contacts: ContactRepository,
+class RegisterPatient {
+  repository: PatientRepository;
 
   execute(): void {
     // ... do work in repository ...
@@ -195,25 +213,25 @@ class CreateContact {
 }
 ```
 
-This worked well at first. But it soon became cumbersome to serialise when paired with dependency injection.
+This worked well at first. But it soon became cumbersome to serialise when paired with dependency injection. 
 
 So, instead, we decided to treat a command as an immutable value object, decoupling it from the handler, which executes the command.
 
 ```ts
-interface CreateContact {
+interface RegisterPatient {
   // ... attributes ...
 }
 
-class CreateContactReceiver {
-  repository: ContactRepository;
+class RegisterPatientReceiver {
+  repository: PatientRepository;
 
-  execute(cmd: CreateContact): void {
+  execute(cmd: RegisterPatient): void {
     // ... execute command ...
   }
 }
 ```
 
-Problem solved. Serialisable command object.
+Problem solved - it was now far easier to transport the command.
 
 But that wasn't the only benefit.
 
@@ -225,22 +243,20 @@ It's now possible to express logic that determines the side-effect to perform, w
 
 That makes it ridiculously easy to test and debug.
 
-But what else can it do? SAMPLE CODE FOR EACH
+But what else can it do?
 
 Although redundant in typescript due to structural typing, we are talking about a general `Cmd` type:
 
 ```ts
 interface Cmd
 {
-  kind: string;
 }
 ```
 
 Since `Cmd` types are values, a set of commands may contain commands themselves:
 
 ```ts
-interface ChainCmd implements Cmd<"chain"> {
-  kind: "chain";
+interface ChainCmd extends Cmd {
   head: Cmd;
   next: Cmd;
 }
@@ -249,8 +265,7 @@ interface ChainCmd implements Cmd<"chain"> {
 Or a collection of commands:
 
 ```ts
-interface SeqCmd implements Cmd {
-  kind: "seq";
+interface SeqCmd extends Cmd {
   sequence: Cmd[];
 }
 ```
@@ -258,8 +273,7 @@ interface SeqCmd implements Cmd {
 We can also implement a command that does nothing:
 
 ```ts
-interface NullCmd implements Cmd {
-  kind: "null";
+interface NullCmd extends Cmd {
 }
 ```
 
@@ -308,14 +322,13 @@ In the same light, we can define a command that represents commands that can be 
 
 ```ts
 interface ParallelCmd extends Cmd {
-  kind: "parallel";
   commands: Cmd[]
 }
 ```
 
 And a simple parallel function, including the ability to flatten:
 
-```
+```ts
 const parallel = (...cmds: Cmd): ParallelCmd => {
   // convert cmds to parallel cmd
 }

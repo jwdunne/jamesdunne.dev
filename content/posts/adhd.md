@@ -4,6 +4,10 @@ date: 2020-09-13T14:48:49+01:00
 draft: true
 ---
 
+I was five years old. No matter how hard I tried, I just couldn't do it. Everyone else could write pages, but I couldn't even write the date. Not with so much going on, so much to think about.
+
+How could I ever succeed when I can't even focus enough to write a date?
+
 I grew up with ADHD.
 
 I was one of the unlucky ones. It flew under the radar when I was at school.
