@@ -59,7 +59,7 @@ As such, collecting feedback has a number of additional benefits over suppressio
 
 We're going to use Terraform to configure a pipeline of feedback events from SES using SNS and SQS. From there, your application can consume feedback from the queue and do something with it:
 
-![[/collecting-ses-feedback.svg]]
+![Architecture](/collecting-ses-feedback.svg)
 
 We will work backwards, starting with the SQS queue. How your application uses the queue is, however, out of scope for this article - this depends entirely on your stack.
 
