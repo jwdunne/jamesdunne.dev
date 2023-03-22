@@ -353,6 +353,7 @@ In our case, we set up two simple tables for each event type:
 #### Storing email complaints
 
 This is how we set up the `email_complaints` table in Postgres:
+
 | Field         | Type      | Constraint |
 | ------------- | --------- | ---------- |
 | id            | varchar   | PK         |
