@@ -1,7 +1,6 @@
 ---
 title: Collecting feedback events from SES using Terraform
 date: 2023-03-22 16:46:11+00:00
-tags: terraform,aws,ses
 ---
 A client came to me in full panic mode. AWS had put their SES account under review. Their complaint rate had shot up to 0.6% overnight, and they woke up to a scary (automated) message from AWS.
 
@@ -60,7 +59,7 @@ As such, collecting feedback has a number of additional benefits over suppressio
 
 We're going to use Terraform to configure a pipeline of feedback events from SES using SNS and SQS. From there, your application can consume feedback from the queue and do something with it:
 
-![[Blank diagram (1).svg]]
+![[collecting-ses-feedback.svg]]
 
 We will work backwards, starting with the SQS queue. How your application uses the queue is, however, out of scope for this article - this depends entirely on your stack.
 
@@ -298,10 +297,10 @@ resource "aws_sns_topic_policy" "email_feedback_topic_policy" {
         Action    = "sns:Publish"
         Resource  = aws_sns_topic.email_feedback_topic.arn
         Condition = {
-		  StringLike = {
-		    "AWS:SourceArn" = "arn:aws:ses:*"
-		  }
-		}
+		      StringLike = {
+		        "AWS:SourceArn" = "arn:aws:ses:*"
+		      }
+		    }
       }
     ]
   })
