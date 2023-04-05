@@ -3,7 +3,7 @@ title: The real "must have" tools for programmers
 date: 2023-04-05 09:42:41+00:00
 ---
 
-**Forget programs. The most important productivity tool for programmers is your
+**Forget programs. The most important productivity tool for programming is your
 mind. And the next best set of software development tools are ones that take care
 of you.**
 
@@ -35,7 +35,7 @@ None other than [Thomas Edison himself used this sleep technique](https://www.sc
 
 Whenever Edison struggled with a problem, he would take a plate and a marble. He'd take them over to his sofa and lay down for a nap. He'd lay the plate on the floor. He'd keep marble in his hand, hanging over the plate. Once he dropped off to sleep, the marble would fall and clatter on the plate. And he would wake up with an **idea**.
 
-Like Edison, you could do this too. Or you could get a good 8-hours in. Either way, quality sleep is one of the best tools for porgramming you can get.
+Like Edison, you could do this too. Or you could get a good 8-hours in. Either way, quality sleep is one of the best tools for programmers you can get.
 
 ### How staying hydrated keeps you sharp
 
