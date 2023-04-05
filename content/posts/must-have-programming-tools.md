@@ -3,7 +3,9 @@ title: The real "must have" tools for programmers
 date: 2023-04-05 09:42:41+00:00
 ---
 
-**Forget programs. The most important productivity tool for programmers is your mind. And next best set of software development tools are ones that take care of you.**
+**Forget programs. The most important productivity tool for programmers is your
+mind. And the next best set of software development tools are ones that take care
+of you.**
 
 It isn't about Git. Or Docker. Or testing frameworks. These are all useful tools. I use them daily. But they are **not** the most important software development tools.
 
