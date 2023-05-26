@@ -255,7 +255,7 @@ Instead of accepting and giving code reviews, you could accept and give feedback
 
 So what next?
 
-Find your weak spots. Decide which will change your game. And then focus and practice and practice even more.
+Find your weak spots. Decide which ones, if improved, will change your game. And then focus and practice and practice even more.
 
 _Thank you to all the wise and wonderful people that took the time to give me
 advice in my Ask HN post five years ago. Your wisdom has improved my life,
