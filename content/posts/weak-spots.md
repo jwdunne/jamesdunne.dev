@@ -120,7 +120,7 @@ Finding your weak spots is like feeling your way around in the dark. By going do
 ### Learn new languages
 
 > A language that doesn't affect the way you think about programming is not worth knowing
-> **Alan J. Perlis
+> **Alan J. Perlis**
 
 Learning new programming languages reveals weak spots.
 
