@@ -36,7 +36,7 @@ And then the pandemic hit. Without the practices, processes and compatibility wi
 
 But the opposite happened. We took to remote working well. So well, in fact, we ditched the office and became 100% remote.
 
-Had I not taken heed of that small HackerNews thread from five years ago, my life would be  much worse today. I'd still be living with my mum and dad. I'd probably be jobless.
+Had I not taken heed of that small HackerNews thread from five years ago, my life would be  much worse today. I'd still be living with my mum and dad.
 
 Here's what I learned.
 
@@ -255,7 +255,7 @@ Instead of accepting and giving code reviews, you could accept and give feedback
 
 So what next?
 
-Find your weak spots. Decide which ones, if improved, will change your game. And then focus and practice and practice even more.
+Find your weak spots. Decide which ones, if improved, will change your game. And then focus, practice and practice even more.
 
 _Thank you to all the wise and wonderful people that took the time to give me
 advice in my Ask HN post five years ago. Your wisdom has improved my life,
