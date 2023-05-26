@@ -257,7 +257,7 @@ So what next?
 
 Find your weak spots. Decide which will change your game. And then focus and practice and practice even more.
 
-_Thank you to all the wise and wonderful hackers that took the time to give me
+_Thank you to all the wise and wonderful people that took the time to give me
 advice in my Ask HN post five years ago. Your wisdom has improved my life,
 professional and otherwise. I now hope to pay it forward and share it as widely
 as I can._
