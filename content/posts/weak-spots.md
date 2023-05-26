@@ -163,7 +163,10 @@ len([1, 2, 3]) == 3
 
 I'll admit, these examples are small potatoes. But you could go up and down the tree of concepts. You would find similarities and differences every step of the way. All the way up to module systems, package management and the ecosystem as a whole.
 
-Each could be a hidden weak spot if you knew only a single language. If you only knew PHP, you would never know that namespaces and autoloading is a poor substitute for a module system. If you only know Python, module systems can be much worse.
+Each could be a hidden weak spot if you knew only a single language. If you only
+knew PHP, you would never know that namespaces and autoloading is a poor
+substitute for a module system. If you only knew Python, you'd never know module systems
+can be much worse.
 
 But, eventually, you should leave the comfort of your paradigm.
 
