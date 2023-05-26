@@ -36,7 +36,7 @@ And then the pandemic hit. Without the practices, processes and compatibility wi
 
 But the opposite happened. We took to remote working well. So well, in fact, we ditched the office and became 100% remote.
 
-Had I not taken heed of that small HackerNews thread from five years ago, my life would be  much worse today. I'd still be living with my mum and dad.
+Had I not taken heed of that small HackerNews thread from five years ago, my life would be much worse today. I'd still be living with my mum and dad.
 
 Here's what I learned.
 
@@ -260,4 +260,5 @@ Find your weak spots. Decide which ones, if improved, will change your game. And
 _Thank you to all the wise and wonderful people that took the time to give me
 advice in my Ask HN post five years ago. Your wisdom has improved my life,
 professional and otherwise. I now hope to pay it forward and share it as widely
-as I can._
+as I can. And thank you to my colleagues for both bearing with me during those
+difficult years and implementing the better ideas I brought to the table._
